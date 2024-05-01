@@ -195,16 +195,12 @@ header nav div a img{
     font-size: 20px;
 }
 
-.gallery__subtitles--austria{
+.gallery__subtitles--styles{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: url(../img/gallery/austria/austria-flag.png);
-    border: 2px solid black;
-    text-align: center;
-    background-size: contain;
-    background-position: center; 
-    background-repeat: repeat;
+    padding: 10px;
+    font-size: 25px
 }
 
 
@@ -212,8 +208,31 @@ header nav div a img{
     max-width: 100%;
     height: 500px;
     object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
+.gallery__subtitles img {
+    width: auto;
+    height: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.gallery__subtitles {
+    padding: 10px;
+    text-align: center;
+    border-top: 3px solid #1E1E1E;
+    margin-top: 10px;
+}
+
+.carousel__styles {
+    width: 60%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /*----------------------------- main contactanos -----------------------------*/
 .global_forms--center .contact__button--center {
@@ -350,6 +369,10 @@ footer .footer_networks .networks__link--grid1{
     .contenido__videos iframe{
         width: 80%;
     }
+
+    .carousel__styles {
+        width: 90%;
+}
 }
 
 @media (max-width: 480px){
@@ -357,5 +380,9 @@ footer .footer_networks .networks__link--grid1{
     .contenido__videos iframe{
         width: 100%;
     }
+
+    .carousel__styles {
+        width: 100%;
+}
 
 }
