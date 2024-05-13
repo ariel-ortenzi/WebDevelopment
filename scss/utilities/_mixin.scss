@@ -1,0 +1,21 @@
+@mixin flex($flex-direction, $justify-content, $aling-items){
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $aling-items;
+}
+
+@mixin fonts ($font-family, $font-weight, $font-style, $background-color: null, $font-size: null, $border: null, $text-aling:null){
+    font-family: $font-family;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    @if $background-color != null{
+        background-color: $background-color;
+    }
+    @if $font-size != null{
+        font-size: $font-size;}
+    @if $border != null{
+        border: $border;}
+    @if $text-aling != null{
+        text-align: $text-aling;}
+}

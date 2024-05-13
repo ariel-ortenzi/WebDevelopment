@@ -1,0 +1,44 @@
+footer{
+    position: sticky;
+    bottom: 0px;
+    background-color: nth($list: $colors, $n: 1);
+    z-index: 9;
+
+}
+
+
+.footer__title {
+    @include fonts("Bebas Neue", 400, normal, null, 25px, null, center);
+    padding-top: 10px;
+}
+
+//Se desconfigura al anidar
+.footer__networks {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "img1" "img2" "img3";
+    justify-items: center;
+}
+
+.networks__link img {
+    width: 70px;
+    height:auto;
+    border: solid rgb(36, 36, 36);
+    border-radius: 20px;
+    align-items: center;
+}
+
+//Se desconfigura al anidar
+footer .footer_networks {
+    .networks__link--grid1{
+        grid-area: img1;
+    }
+    .networks__link--grid2{
+        grid-area: img2;
+    }
+    .networks__link--grid1{
+        grid-area: img3;
+    }
+}

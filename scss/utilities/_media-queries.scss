@@ -1,0 +1,39 @@
+@media (max-width: 991px){
+    .menu{
+        background-color: nth($list: $colors, $n: 1);
+        position: absolute;
+        width: 100%;
+        top: 105px;
+        width: 150px;
+        position: fixed;
+        right: 15px;
+        border: 2px solid nth($list: $colors, $n: 4);
+        height: 200px;
+    }
+    
+    .navbar__text--border {
+        border-top: 1px dashed;
+    }
+}
+
+@media (max-width: 768px){
+
+    .contenido__videos iframe{
+        width: 80%;
+    }
+
+    .carousel__styles {
+        width: 90%;
+}
+}
+
+@media (max-width: 480px){
+
+    .contenido__videos iframe{
+        width: 100%;
+    }
+
+    .carousel__styles {
+        width: 100%;
+}
+}

@@ -1,0 +1,63 @@
+// Reset 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 10px;
+    background-color: #80fcfc;
+    overflow: auto;
+}
+
+//Text format
+.global__titles {
+    @include fonts("Bebas Neue", 400, normal, nth($list: $colors, $n: 1), null, 2px solid black, center);
+    }
+
+.global__subtitles {
+    @include fonts("Bebas Neue", 400, normal, nth($list: $colors, $n: 1), null, 2px solid black, center);
+    }
+
+.videos__titles{
+    @include fonts("Quicksand", 700, normal, null, 20px);
+}
+
+p {
+    @include fonts("Quicksand", 500, normal);
+}
+
+h4{
+    @include fonts("Quicksand", 700, normal, null, 20px)
+}
+
+//Form format
+.global_forms--center {
+    .donaciones__button--center {
+    margin-left: 20%;
+    }
+    button{
+        background-color: blueviolet;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        &:hover{
+            background-color: rgb(169, 85, 248);
+        }
+    }
+}
+
+.form__text--bold {
+    @include fonts("Quicksand", bold, normal);
+}
+
+.form__text--fount {
+    @include fonts("Quicksand", bold, normal);
+}

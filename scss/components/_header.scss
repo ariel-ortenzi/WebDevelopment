@@ -1,0 +1,58 @@
+header {
+    background-color: nth($list: $colors, $n: 1);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    border-bottom: 2px solid rgba(32, 32, 32, 0.658);
+    nav{
+        ul{
+            display: flex;
+            column-gap: 10px;
+        }
+        div{
+            a{
+                img{
+                    width: 150px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+
+.navbar__text {
+    list-style: none;
+    @include fonts("Bebas Neue", 400, normal, null, 25px);
+    a{
+        color: nth($list: $colors, $n: 3);
+        text-decoration: none;
+    }
+}
+
+.menu {
+    flex-grow: 0;
+}
+
+.menu__hamburguer--icon {
+    background-image: url(../img/menu/menu-hamb.svg);
+}
+
+.menu__text--center {
+    text-align: center;
+}
+
+.menu__text--padding {
+    padding: 10px;
+}
+
+.menu__button--margin {
+    margin: 10px;
+}
+
+.menu__text--center .navbar__text .active {
+    color:blueviolet;
+}
+
+.menu__text--center .navbar__text a:hover{
+    color: #80fcfc;
+}

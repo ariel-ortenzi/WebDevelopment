@@ -1,0 +1,10 @@
+.section__forms--height{
+    min-height: 100vh;
+    min-width: 100%;
+    @include flex(column, center, center);
+    padding-bottom: 550px;
+}
+
+.donaciones_title {
+    @include fonts("Quicksand", bold, normal, null, 30px);
+}
