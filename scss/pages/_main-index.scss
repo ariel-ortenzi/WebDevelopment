@@ -1,3 +1,9 @@
-.index__videos-titles {
-    @include fonts("Quicksand", 700, normal, null, 20px);
+.main-index{
+    .index__videos{
+        .contenido__videos{
+            .index__videos-titles {
+                @include fonts("Quicksand", 700, normal, null, 20px);
+            }
+        }
+    }
 }

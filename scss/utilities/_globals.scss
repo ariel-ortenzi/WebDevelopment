@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+//Set
 main {
     padding: 10px;
     background-color: #80fcfc;
@@ -30,34 +31,4 @@ p {
 
 h4{
     @include fonts("Quicksand", 700, normal, null, 20px)
-}
-
-//Form format
-.global_forms--center {
-    .donaciones__button--center {
-    margin-left: 20%;
-    }
-    button{
-        background-color: blueviolet;
-        color: white;
-        border: none;
-        padding: 10px 20px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        cursor: pointer;
-        border-radius: 5px;
-        &:hover{
-            background-color: rgb(169, 85, 248);
-        }
-    }
-}
-
-.form__text--bold {
-    @include fonts("Quicksand", bold, normal);
-}
-
-.form__text--fount {
-    @include fonts("Quicksand", bold, normal);
 }

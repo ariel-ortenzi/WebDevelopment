@@ -27,7 +27,7 @@
 </head>
 <body>
     <header>
-            <nav class="navbar navbar-expand-lg ">
+            <nav class="navbar navbar-expand-lg nav-header">
                 <div class="container-fluid menu__text--padding">
                     <a class="navbar-brand" href="../index.html">
                         <img src="../img/logotypes/logo-solari.png" alt="logo solari"></a>
@@ -47,19 +47,27 @@
             </nav>
     </header>
 
-    <main>
+    <main class="main-donaciones main-forms">
         <h1 class="global__titles">Donaciones</h1>
         <section class="section__forms--height">
             <h2 class="donaciones_title">¡Apóyanos!</h2>
             <p class="form__text--bold">Si te gusta nuestro trabajo y deseas apoyarnos, puedes hacer una donación aquí:</p>
             <form class="global_forms--center" id="donation-form">
-                <label form__text--fount for="amount">Monto de la donación:</label><br>
-                <input type="number" id="amount" name="amount" min="1" required><br>
-                <label form__text--fount for="name">Nombre completo:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label form__text--fount for="email">E-mail:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <button class="form__text--bold donaciones__button--center" type="submit">¡DONAR!</button>
+                <div class="form__fields">
+                    <label class="form__text--fount" for="amount">Monto de la donación:</label><br>
+                    <input type="number" id="amount" name="amount" min="1" required>
+                </div>
+                <div class="form__fields">
+                    <label class="form__text--fount" for="name">Nombre completo:</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form__fields">
+                    <label class="form__text--fount" for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form__button">
+                    <button class="form__button--style" type="submit">¡DONAR!</button><br>
+                </div>
             </form>
         </section>
         </div>

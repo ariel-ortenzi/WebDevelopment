@@ -1,7 +1,15 @@
-.global_forms--center .contact__button--center {
-    margin-left: 0%;
-}
-
-.contactanos__subtitle{
-    @include fonts("Quicksand", 700, normal, null, 20px)
+.main-contactanos{
+    @extend %form;
+    .section__forms--height{
+        .contactanos__subtitle{
+            @include fonts("Quicksand", 700, normal, null, 20px)
+        }
+        .global_forms--center{
+            .contactanos-button{
+                .form__button--style {
+                    margin-left: 0%;
+                }
+            }
+        }
+    }
 }

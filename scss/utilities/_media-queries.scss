@@ -17,23 +17,65 @@
 }
 
 @media (max-width: 768px){
-
+    
+//Videos Contenido
+.main-contenido{
+    .section__contenido--height{
+        .accordion{
+            .accordion__item--margin{
+                .accordion-collapse{
+                    .accordion__body--color{
+                        .contenido__videos {
+                            iframe{
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
     .contenido__videos iframe{
         width: 80%;
     }
 
-    .carousel__styles {
-        width: 90%;
+//Carousel Galería
+.main-galeria{
+    section{
+        .carousel__styles {
+            width: 100%;
+    }
+    }
 }
 }
 
 @media (max-width: 480px){
-
-    .contenido__videos iframe{
-        width: 100%;
+//Videos Contenido
+.main-contenido{
+    .section__contenido--height{
+        .accordion{
+            .accordion__item--margin{
+                .accordion-collapse{
+                    .accordion__body--color{
+                        .contenido__videos {
+                            iframe{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+}
 
-    .carousel__styles {
-        width: 100%;
+//Carousel Galería
+.main-galeria{
+    section{
+        .carousel__styles {
+            width: 100%;
+    }
+    }
 }
 }

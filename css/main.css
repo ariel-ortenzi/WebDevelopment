@@ -1,3 +1,42 @@
+.main-donaciones .section__forms--height, .main-contactanos .section__forms--height {
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 550px;
+}
+.main-donaciones .section__forms--height .global_forms--center .form__fields .form__text--fount, .main-contactanos .section__forms--height .global_forms--center .form__fields .form__text--fount {
+  font-family: "Quicksand";
+  font-weight: bold;
+  font-style: normal;
+}
+.main-donaciones .section__forms--height .global_forms--center .form__button, .main-contactanos .section__forms--height .global_forms--center .form__button {
+  margin-top: 15px;
+}
+.main-donaciones .section__forms--height .global_forms--center .form__button .form__button--style, .main-contactanos .section__forms--height .global_forms--center .form__button .form__button--style {
+  margin-left: 20%;
+  font-family: "Quicksand";
+  font-weight: bold;
+  font-style: normal;
+}
+.main-donaciones .section__forms--height .global_forms--center .form__button button, .main-contactanos .section__forms--height .global_forms--center .form__button button {
+  background-color: blueviolet;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.main-donaciones .section__forms--height .global_forms--center .form__button button:hover, .main-contactanos .section__forms--height .global_forms--center .form__button button:hover {
+  background-color: rgb(169, 85, 248);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -48,37 +87,6 @@ h4 {
   font-size: 20px;
 }
 
-.global_forms--center .donaciones__button--center {
-  margin-left: 20%;
-}
-.global_forms--center button {
-  background-color: blueviolet;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-.global_forms--center button:hover {
-  background-color: rgb(169, 85, 248);
-}
-
-.form__text--bold {
-  font-family: "Quicksand";
-  font-weight: bold;
-  font-style: normal;
-}
-
-.form__text--fount {
-  font-family: "Quicksand";
-  font-weight: bold;
-  font-style: normal;
-}
-
 header {
   background-color: #AFA2FF;
   position: sticky;
@@ -86,53 +94,43 @@ header {
   z-index: 10;
   border-bottom: 2px solid rgba(32, 32, 32, 0.658);
 }
-header nav ul {
-  display: flex;
-  column-gap: 10px;
+header .nav-header .menu__text--padding {
+  padding: 10px;
 }
-header nav div a img {
+header .nav-header .menu__text--padding .navbar-brand img {
   width: 150px;
   height: auto;
 }
-
-.navbar__text {
+header .nav-header .menu__text--padding .menu__text--center {
+  display: flex;
+  column-gap: 10px;
+  text-align: center;
+}
+header .nav-header .menu__text--padding .menu__text--center .navbar__text {
   list-style: none;
   font-family: "Bebas Neue";
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
 }
-.navbar__text a {
+header .nav-header .menu__text--padding .menu__text--center .navbar__text a {
   color: #372b88;
   text-decoration: none;
 }
-
-.menu {
-  flex-grow: 0;
-}
-
-.menu__hamburguer--icon {
-  background-image: url(../img/menu/menu-hamb.svg);
-}
-
-.menu__text--center {
-  text-align: center;
-}
-
-.menu__text--padding {
-  padding: 10px;
-}
-
-.menu__button--margin {
-  margin: 10px;
-}
-
-.menu__text--center .navbar__text .active {
+header .nav-header .menu__text--padding .menu__text--center .navbar__text.active {
   color: blueviolet;
 }
-
-.menu__text--center .navbar__text a:hover {
+header .nav-header .menu__text--padding .menu__text--center .navbar__text a:hover {
   color: #80fcfc;
+}
+header .nav-header .menu__text--padding .menu {
+  flex-grow: 0;
+}
+header .nav-header .menu__text--padding .menu__hamburguer--icon {
+  background-image: url(../img/menu/menu-hamb.svg);
+}
+header .nav-header .menu__text--padding .menu__button--margin {
+  margin: 10px;
 }
 
 footer {
@@ -141,8 +139,7 @@ footer {
   background-color: #AFA2FF;
   z-index: 9;
 }
-
-.footer__title {
+footer .footer__title {
   font-family: "Bebas Neue";
   font-weight: 400;
   font-style: normal;
@@ -150,100 +147,116 @@ footer {
   text-align: center;
   padding-top: 10px;
 }
-
-.footer__networks {
+footer .footer__networks {
   padding: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "img1" "img2" "img3";
+  grid-template-areas: "img1 img2 img3";
   justify-items: center;
 }
-
-.networks__link img {
+footer .footer__networks .networks__link a img {
   width: 70px;
   height: auto;
   border: solid rgb(36, 36, 36);
   border-radius: 20px;
   align-items: center;
 }
-
-footer .footer_networks .networks__link--grid1 {
+footer .footer__networks .networks__link--grid1 {
   grid-area: img1;
 }
-footer .footer_networks .networks__link--grid2 {
+footer .footer__networks .networks__link--grid2 {
   grid-area: img2;
 }
-footer .footer_networks .networks__link--grid1 {
+footer .footer__networks .networks__link--grid1 {
   grid-area: img3;
 }
 
-.index__videos-titles {
+.main-index .index__videos .contenido__videos .index__videos-titles {
   font-family: "Quicksand";
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
 }
 
-.section__contenido--height {
+.main-contenido .section__contenido--height {
   min-height: 100vh;
   min-width: 100%;
 }
-
-.contenido__videos {
+.main-contenido .section__contenido--height .accordion .accordion__item--margin {
+  margin: 10px;
+  background-color: #80fcfc;
+  border: none;
+}
+.main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion-collapse .accordion__body--color {
+  background-color: #80fcfc;
+}
+.main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion-collapse .accordion__body--color .contenido__videos {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   padding-bottom: 15px;
 }
-.contenido__videos iframe {
+.main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion-collapse .accordion__body--color .contenido__videos iframe {
   border-radius: 20px;
   padding-bottom: 5px;
 }
-
-.accordion_button--color {
+.main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion-header .accordion-button {
+  box-shadow: none;
+}
+.main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion-header .accordion_button--color {
   background-color: #AFA2FF;
   border: 1px solid #1E1E1E;
 }
-.accordion_button--color button:focus {
-  background-color: blueviolet;
-  border: 3px solid #1E1E1E;
+.main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion-header .accordion_button--color .videos__titles:not(.collapsed) {
+  font-size: 20px;
 }
-
-.accordion_button--color:not(.collapsed) {
+.main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion-header .accordion_button--color:not(.collapsed) {
   background-color: #9686ff;
   border: 3px solid #1E1E1E;
   box-shadow: -1px 0px 24px 0px rgba(219, 0, 255, 0.75);
 }
-
-.accordion_button--color .videos__titles:not(.collapsed) {
-  font-size: 20px;
-}
-
-.accordion__body--color {
-  background-color: #80fcfc;
-}
-
-.accordion__item--margin {
-  margin: 10px;
-  background-color: #80fcfc;
-  border: none;
-}
-
-.accordion__margin--second {
+.main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion__margin--second {
   margin-top: 10px;
   border: none;
 }
 
-.accordion-button.collapsed {
-  box-shadow: none;
+.main-galeria section .gallery__subtitles {
+  padding: 10px;
+  text-align: center;
+  border-top: 3px solid #1E1E1E;
+  margin-top: 10px;
 }
-
-.carousel__item {
+.main-galeria section .gallery__subtitles img {
+  width: auto;
+  height: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.main-galeria section .gallery__subtitles .gallery__subtitles--styles {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  padding: 10px;
+}
+.main-galeria section .carousel__styles {
+  width: 60%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-galeria section .carousel-inner .carousel__item {
   text-align: center;
 }
-
-.title__img {
+.main-galeria section .carousel-inner .carousel__item .gallery__img--size {
+  max-width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.main-galeria section .carousel-inner .carousel__item .title__img {
   font-family: "Bebas Neue";
   font-weight: 400;
   font-style: normal;
@@ -252,65 +265,24 @@ footer .footer_networks .networks__link--grid1 {
   color: white;
   padding: 0% 2% 0% 2%;
 }
-
-.gallery__subtitles--styles {
-  font-family: "Bebas Neue";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 25px;
-  padding: 10px;
-}
-
-.carousel__item .gallery__img--size {
-  max-width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 15px;
-  overflow: hidden;
-}
-
-.gallery__subtitles {
-  padding: 10px;
-  text-align: center;
-  border-top: 3px solid #1E1E1E;
-  margin-top: 10px;
-}
-.gallery__subtitles img {
-  width: auto;
-  height: 25px;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.carousel__styles {
+.main-galeria section .carousel__styles {
   width: 60%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
-.global_forms--center .contact__button--center {
-  margin-left: 0%;
-}
-
-.contactanos__subtitle {
+.main-contactanos .section__forms--height .contactanos__subtitle {
   font-family: "Quicksand";
   font-weight: 700;
   font-style: normal;
   font-size: 20px;
 }
-
-.section__forms--height {
-  min-height: 100vh;
-  min-width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 550px;
+.main-contactanos .section__forms--height .global_forms--center .contactanos-button .form__button--style {
+  margin-left: 0%;
 }
 
-.donaciones_title {
+.main-donaciones .donaciones_title {
   font-family: "Quicksand";
   font-weight: bold;
   font-style: normal;
@@ -334,18 +306,21 @@ footer .footer_networks .networks__link--grid1 {
   }
 }
 @media (max-width: 768px) {
+  .main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion-collapse .accordion__body--color .contenido__videos iframe {
+    width: 80%;
+  }
   .contenido__videos iframe {
     width: 80%;
   }
-  .carousel__styles {
-    width: 90%;
+  .main-galeria section .carousel__styles {
+    width: 100%;
   }
 }
 @media (max-width: 480px) {
-  .contenido__videos iframe {
+  .main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion-collapse .accordion__body--color .contenido__videos iframe {
     width: 100%;
   }
-  .carousel__styles {
+  .main-galeria section .carousel__styles {
     width: 100%;
   }
 }
