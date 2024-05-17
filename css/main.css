@@ -101,36 +101,42 @@ header .nav-header .menu__text--padding .navbar-brand img {
   width: 150px;
   height: auto;
 }
-header .nav-header .menu__text--padding .menu__text--center {
+header .nav-header .menu__text--padding .menu {
+  flex-grow: 0;
+}
+header .nav-header .menu__text--padding .menu .menu__text--center {
   display: flex;
   column-gap: 10px;
   text-align: center;
 }
-header .nav-header .menu__text--padding .menu__text--center .navbar__text {
+header .nav-header .menu__text--padding .menu .menu__text--center .navbar__text {
   list-style: none;
   font-family: "Bebas Neue";
   font-weight: 400;
   font-style: normal;
   font-size: 25px;
 }
-header .nav-header .menu__text--padding .menu__text--center .navbar__text a {
+header .nav-header .menu__text--padding .menu .menu__text--center .navbar__text a {
   color: #372b88;
   text-decoration: none;
 }
-header .nav-header .menu__text--padding .menu__text--center .navbar__text.active {
+header .nav-header .menu__text--padding .menu .menu__text--center .navbar__text .active {
   color: blueviolet;
 }
-header .nav-header .menu__text--padding .menu__text--center .navbar__text a:hover {
+header .nav-header .menu__text--padding .menu .menu__text--center .navbar__text a:hover {
   color: #80fcfc;
-}
-header .nav-header .menu__text--padding .menu {
-  flex-grow: 0;
 }
 header .nav-header .menu__text--padding .menu__hamburguer--icon {
   background-image: url(../img/menu/menu-hamb.svg);
 }
 header .nav-header .menu__text--padding .menu__button--margin {
   margin: 10px;
+}
+header .nav-header .menu__text--padding .menu__button--margin:focus {
+  background-color: blueviolet;
+}
+header .nav-header .menu__text--padding .menu__button--margin:hover {
+  box-shadow: -1px 1px 26px 13px rgba(44, 242, 255, 0.73);
 }
 
 footer {
@@ -171,7 +177,11 @@ footer .footer__networks .networks__link--grid1 {
   grid-area: img3;
 }
 
-.main-index .index__videos .contenido__videos .index__videos-titles {
+.main-index .index__videos .contenido__videos iframe {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.main-index .index__videos .contenido__videos .video-text .index__videos-titles {
   font-family: "Quicksand";
   font-weight: 700;
   font-style: normal;

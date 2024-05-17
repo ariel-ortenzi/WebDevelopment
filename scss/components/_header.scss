@@ -13,34 +13,44 @@ header {
                     height: auto;
                 }
             }
-            .menu__text--center{
-                display: flex;
-                column-gap: 10px;
-                text-align: center;
-                .navbar__text {
-                    list-style: none;
-                    @include fonts("Bebas Neue", 400, normal, null, 25px);
-                    a{
-                        color: nth($list: $colors, $n: 3);
-                        text-decoration: none;
-                    }
-                    &.active{
-                        color:blueviolet;
-                    }
-                    a:hover{
-                            color: #80fcfc;
+            .menu{
+                flex-grow: 0;
+                .menu__text--center{
+                    display: flex;
+                    column-gap: 10px;
+                    text-align: center;
+                    .navbar__text {
+                        list-style: none;
+                        @include fonts("Bebas Neue", 400, normal, null, 25px);
+                        a{
+                            color: nth($list: $colors, $n: 3);
+                            text-decoration: none;
+                        }
+                        & .active{
+                            color:blueviolet;
+                        }
+                        a:hover{
+                                color: #80fcfc;
+                        }
+                    // }
+                    // .navbar__text .active{
+
+                    // }
+                    
                     }
                 }
-                
-            }
-            .menu {
-                flex-grow: 0;
             }
             .menu__hamburguer--icon {
                 background-image: url(../img/menu/menu-hamb.svg);
             }
             .menu__button--margin {
                 margin: 10px;
+                &:focus{
+                    background-color: blueviolet;
+                }
+                &:hover{
+                    box-shadow: -1px 1px 26px 13px rgba(44,242,255,0.73);
+                }
             }
         }
     }

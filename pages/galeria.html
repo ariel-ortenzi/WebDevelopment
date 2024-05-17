@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Explora nuestra galería de imágenes sobre viajes por Europa, descubre cómo obtener la ciudadanía italiana y obtén valiosos consejos para emigrar. Únete a nuestra comunidad de viajeros.">
+    <meta name="keywords" content="HTML, CSS, SCSS, viajes, ciudadanía italiana, emigrar a Europa, consejos de emigración, imágenes, fotografías, aventuras, exploración, cultura europea">
+    <meta name="author" content="SOLARI de viaje">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOLARI | Galería</title>
+    <title>SOLARI de viaje | Galería</title>
 
     <!-- founts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +27,9 @@
 
     <!-- link to css -->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- link to aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -33,7 +38,7 @@
         <nav class="navbar navbar-expand-lg nav-header">
             <div class="container-fluid menu__text--padding">
                 <a class="navbar-brand" href="../index.html">
-                    <img src="../img/logotypes/logo-solari.png" alt="logo solari"></a>
+                    <img data-aos="zoom-in" src="../img/logotypes/logo-solari.png" alt="logo solari de viaje"></a>
                 <button class="navbar-toggler menu__button--margin" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -57,13 +62,13 @@
     </header>
 
     <main class="main-galeria">
-        <h1 class="global__titles">Galería</h1>
+        <h1 data-aos="flip-up" class="global__titles">Galería</h1>
         <section class="austria-viena">
             <div class="gallery__subtitles">
                 <span class="gallery__subtitles--styles">AUSTRIA - VIENA</span>
                 <img src="../img/flags/austria-flag.png" alt="austria flag">
             </div>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide carousel__styles">
+            <div data-aos="zoom-in" id="carouselExampleDark" class="carousel carousel-dark slide carousel__styles">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -82,7 +87,7 @@
                         </div>
                     </div>
                     <div class="carousel-item carousel__item" data-bs-interval="2000">
-                        <img class="gallery__img--size" src="../img/gallery/austria/viena/palacio-scho.jpg" class="d-block w-100" alt="palacio-schönbrunn">
+                        <img class="gallery__img--size" src="../img/gallery/austria/viena/palacio-scho.jpg" class="d-block w-100" alt="palacio schönbrunn">
                         <div class="carousel-caption d-none d-md-block">
                             <span class="title__img">Palacio Schönbrunn</span>
                         </div>
@@ -117,7 +122,7 @@
                 <span class="gallery__subtitles--styles">ESLOVEQUIA - BRATISLAVA</span>
                 <img src="../img/flags/slovakia-flag.png" alt="slovakia flag">
             </div>
-            <div id="carousel__2" class="carousel carousel-dark slide carousel__styles">
+            <div data-aos="zoom-in" id="carousel__2" class="carousel carousel-dark slide carousel__styles">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel__2" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -155,7 +160,7 @@
                 <span class="gallery__subtitles--styles">NORUEGA - OSLO</span>
                 <img src="../img/flags/norwey-flag.png" alt="norway flag">
             </div>
-            <div id="carousel__3" class="carousel carousel-dark slide carousel__styles">
+            <div data-aos="zoom-in" id="carousel__3" class="carousel carousel-dark slide carousel__styles">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel__3" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -209,7 +214,7 @@
                 <span class="gallery__subtitles--styles">HUNGRÍA - BUDAPEST</span>
                 <img src="../img/flags/hungary-flag.png" alt="hungary flag">
             </div>
-            <div id="carousel__4" class="carousel carousel-dark slide carousel__styles">
+            <div data-aos="zoom-in" id="carousel__4" class="carousel carousel-dark slide carousel__styles">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel__4" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -263,7 +268,7 @@
                 <span class="gallery__subtitles--styles">INGLATERRA - LONDRES</span>
                 <img src="../img/flags/england-flag.png" alt="england flag">
             </div>
-            <div id="carousel__5" class="carousel carousel-dark slide carousel__styles">
+            <div data-aos="zoom-in" id="carousel__5" class="carousel carousel-dark slide carousel__styles">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel__5" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -333,7 +338,7 @@
                 <span class="gallery__subtitles--styles">DINAMARCA</span>
                 <img src="../img/flags/denmark-flag.png" alt="denmark flag">
             </div>
-            <div id="carousel__6" class="carousel carousel-dark slide carousel__styles">
+            <div data-aos="zoom-in" id="carousel__6" class="carousel carousel-dark slide carousel__styles">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel__6" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -411,7 +416,7 @@
                 <span class="gallery__subtitles--styles">ITALIA</span>
                 <img src="../img/flags/italy-flag.png" alt="italy flag">
             </div>
-            <div id="carousel__7" class="carousel carousel-dark slide carousel__styles">
+            <div data-aos="zoom-in" id="carousel__7" class="carousel carousel-dark slide carousel__styles">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carousel__7" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -540,6 +545,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+        <!-- Script aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
 </body>
 
 </html>
