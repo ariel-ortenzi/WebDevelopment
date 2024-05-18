@@ -100,6 +100,17 @@ header .nav-header .menu__text--padding .navbar-brand img {
   width: 150px;
   height: auto;
 }
+header .nav-header .menu__text--padding .navbar-brand img:hover {
+  animation: zoomIn 0.5s forwards;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
 header .nav-header .menu__text--padding .menu {
   flex-grow: 0;
 }
@@ -177,8 +188,28 @@ footer .footer__networks .networks__link--grid1 {
   grid-area: img3;
 }
 
+.main-index .text__description--style {
+  text-align: center;
+}
 .main-index .text__description--style p {
   text-align: justify;
+}
+.main-index .text__description--style .index__banner--style {
+  max-width: 80%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 3px solid #1E1E1E;
+}
+.main-index .text__description--style .index__banner--style:hover {
+  animation: zoomIn 0.5s forwards;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 .main-index .index__videos .contenido__videos {
   display: flex;
@@ -190,6 +221,18 @@ footer .footer__networks .networks__link--grid1 {
 .main-index .index__videos .contenido__videos iframe {
   border-radius: 20px;
   margin-bottom: 15px;
+  margin-top: 15px;
+}
+.main-index .index__videos .contenido__videos iframe:hover {
+  animation: zoomIn 0.5s forwards;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 .main-index .index__videos .contenido__videos .video-text .index__videos-titles {
   font-family: "Quicksand";
@@ -225,6 +268,18 @@ footer .footer__networks .networks__link--grid1 {
 .main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion-collapse .accordion__body--color .contenido__videos iframe {
   border-radius: 20px;
   margin-bottom: 15px;
+  margin-top: 15px;
+}
+.main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion-collapse .accordion__body--color .contenido__videos iframe:hover {
+  animation: zoomIn 0.5s forwards;
+}
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
 }
 .main-contenido .section__contenido--height .accordion .accordion__item--margin .accordion-header .accordion-button {
   box-shadow: none;

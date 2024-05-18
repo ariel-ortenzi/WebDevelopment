@@ -1,7 +1,25 @@
 .main-index{
     .text__description--style{
+        text-align: center;
         p{
             text-align: justify;
+        }
+        .index__banner--style{
+            max-width: 80%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            border: 3px solid nth($list: $colors, $n: 4);
+            &:hover{
+                animation: zoomIn 0.5s forwards;
+                @keyframes zoomIn {
+                    from {
+                        transform: scale(1);
+                    }
+                    to {
+                        transform: scale(1.1);
+                    }
+                }
+            }
         }
     }
     .index__videos{
@@ -10,6 +28,18 @@
             iframe{
                 border-radius: 20px;
                 margin-bottom: 15px;
+                margin-top: 15px;
+                &:hover{
+                    animation: zoomIn 0.5s forwards;
+                    @keyframes zoomIn {
+                        from {
+                            transform: scale(1);
+                        }
+                        to {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
                 }
             .video-text{
                 .index__videos-titles {

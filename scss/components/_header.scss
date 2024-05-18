@@ -11,6 +11,17 @@ header {
                 img{
                     width: 150px;
                     height: auto;
+                    &:hover{
+                        animation: zoomIn 0.5s forwards;
+                        @keyframes zoomIn {
+                            from {
+                                transform: scale(1);
+                            }
+                            to {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
                 }
             }
             .menu{

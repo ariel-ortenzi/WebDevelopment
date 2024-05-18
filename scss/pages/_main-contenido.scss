@@ -17,6 +17,18 @@
                         iframe{
                             border-radius: 20px;
                             margin-bottom: 15px;
+                            margin-top: 15px;
+                            &:hover{
+                                animation: zoomIn 0.5s forwards;
+                                @keyframes zoomIn {
+                                    from {
+                                        transform: scale(1);
+                                    }
+                                    to {
+                                        transform: scale(1.1);
+                                    }
+                                }
+                            }
                         }
                     }
                 }
