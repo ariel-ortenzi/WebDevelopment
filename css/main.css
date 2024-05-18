@@ -411,6 +411,10 @@ footer .footer__networks .networks__link--grid1 {
   .main-galeria section .carousel__styles {
     width: 100%;
   }
+  .main-contactanos {
+    height: calc(100vh - 8rem);
+    overflow-y: hidden;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
