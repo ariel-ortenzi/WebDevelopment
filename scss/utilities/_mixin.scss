@@ -1,8 +1,11 @@
-@mixin flex($flex-direction, $justify-content, $aling-items){
+@mixin flex($flex-direction, $justify-content, $aling-items, $text-align: null){
     display: flex;
     flex-direction: $flex-direction;
     justify-content: $justify-content;
     align-items: $aling-items;
+    @if $text-align != null{
+        text-align: $text-align;
+    }
 }
 
 @mixin fonts ($font-family, $font-weight, $font-style, $background-color: null, $font-size: null, $border: null, $text-aling:null){

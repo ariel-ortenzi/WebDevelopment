@@ -3,6 +3,7 @@ footer{
     bottom: 0px;
     background-color: nth($list: $colors, $n: 1);
     z-index: 9;
+    overflow-y: hidden;
     .footer__title {
         @include fonts("Bebas Neue", 400, normal, null, 25px, null, center);
         padding-top: 10px;

@@ -1,6 +1,8 @@
 .main-donaciones{
+    height: calc(80vh - 2 * 4rem);
+    overflow-y: hidden;
     @extend %form;
-        .donaciones_title {
-            @include fonts("Quicksand", bold, normal, null, 30px);
-        }
+    .donaciones_title {
+        @include fonts("Quicksand", bold, normal, null, 30px);
     }
+}

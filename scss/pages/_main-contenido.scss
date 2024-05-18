@@ -11,11 +11,12 @@
                 .accordion__body--color {
                     background-color:#80fcfc;
                     .contenido__videos {
-                        @include flex(column, start, start);
+                        @include flex(column, center, center, center);
+                        text-align: center;
                         padding-bottom: 15px;
                         iframe{
                             border-radius: 20px;
-                            padding-bottom: 5px;
+                            margin-bottom: 15px;
                         }
                     }
                 }

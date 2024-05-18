@@ -1,4 +1,6 @@
 .main-contactanos{
+    height: calc(90vh - 2 * 4rem);
+    overflow-y: hidden; 
     @extend %form;
     .section__forms--height{
         .contactanos__subtitle{
