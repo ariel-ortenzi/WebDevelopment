@@ -353,7 +353,7 @@ footer .footer__networks .networks__link--grid1 {
 }
 
 .main-contactanos {
-  height: calc(90vh - 8rem);
+  height: calc(100vh - 8rem);
   overflow-y: hidden;
 }
 .main-contactanos .section__forms--height .contactanos__subtitle {
@@ -367,7 +367,7 @@ footer .footer__networks .networks__link--grid1 {
 }
 
 .main-donaciones {
-  height: calc(80vh - 8rem);
+  height: calc(100vh - 8rem);
   overflow-y: hidden;
 }
 .main-donaciones .donaciones_title {
